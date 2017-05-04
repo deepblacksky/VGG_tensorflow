@@ -151,7 +151,7 @@ def accuracy(logits, labels):
     """
     with tf.name_scope('accuracy') as scope:
         correct = tf.equal(tf.arg_max(logits, 1), tf.arg_max(labels, 1))
-        correct = tf.cast(correct, tf.int32)
+        correct = tf.cast(correct, tf.float32)
         accuracy_temp = tf.reduce_mean(correct) * 100.0
         tf.summary.scalar(scope+'/accuracy', accuracy_temp)
 
