@@ -7,7 +7,8 @@ this code implement VGG16 network by this [paper](https://arxiv.org/abs/1409.155
 # Training
 - load pre-trained parameters from here: https://mega.nz/#!YU1FWJrA!O1ywiCS2IiOlUCtCpI6HTJOMrneN-Qdv3ywQP5poecM
 - the pre-trained parameters were trained on ImageNet DataSet, 1000 clasess.
-- Remove the final FC layer and add one 10 nodes FC layer to apply for Cifar10 DataSet
+- Remove the final FC layer and add one 10 nodes FC layer to apply for Cifar10 DataSet 
+https://www.cs.toronto.edu/~kriz/cifar.html
 
 ## first training
 use the pre_trained convolution layer parameters, and train the FC layer parameters
